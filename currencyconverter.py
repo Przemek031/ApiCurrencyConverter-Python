@@ -18,7 +18,7 @@ eurrequest= requests.get("http://api.nbp.pl/api/exchangerates/rates/a/eur/")
 eurdata = eurrequest.json()
 eur = eurdata['rates'][0]['mid']
 
-print(usd,eur)
+print(usd,chf,gbp,eur)
 
 window = Tk()
 window.title("Api converting price")
